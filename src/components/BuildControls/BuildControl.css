@@ -1,0 +1,80 @@
+.build-control {
+  width: 100%;
+  background-color: #dcdcdc;
+  padding: 10px 0px;
+  text-align: center;
+}
+
+.build-control h4 {
+  margin: 0;
+  padding: 4px 0;
+}
+
+.control-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.control-menu p {
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 20px;
+  margin: 0;
+}
+
+.build-control button {
+  padding: 8px 25px;
+  background-color: rgb(192, 92, 11);
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+}
+
+.build-control button:disabled {
+  background-color: white;
+}
+
+.order-button {
+  background-color: #dad735;
+  outline: none;
+  cursor: pointer;
+  border: 1px solid #966909;
+  color: #966909;
+  font-family: inherit;
+  font-size: 1.2em;
+  padding: 15px 30px;
+  box-shadow: 2px 2px 2px #966909;
+}
+
+.order-button:hover,
+.order-button:active {
+  background-color: #a0db41;
+  /* border: 1px solid #966909; */
+  /* color: #966909; */
+}
+
+.order-button:disabled {
+  background-color: white;
+  cursor: not-allowed;
+  border: 1px solid #ccc;
+  color: #888888;
+}
+
+.order-button:not(:disabled) {
+  animation: enable 0.3s linear;
+}
+
+@keyframes enable {
+  0% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

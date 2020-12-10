@@ -1,0 +1,41 @@
+.side-drawer {
+  width: 250px;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #dcdcdc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  z-index: 200;
+}
+
+.side-drawer img {
+  width: 180px;
+  height: auto;
+  background-color: white;
+  border-radius: 5px;
+  padding: 4px;
+}
+
+.side-drawer button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  outline: none;
+  cursor: pointer;
+  font: inherit;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.side-drawer button:first-of-type {
+  margin-top: 40px;
+  color: #5c9210;
+}
+
+.side-drawer button:nth-of-type(2) {
+  color: white;
+}

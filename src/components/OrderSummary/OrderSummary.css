@@ -1,0 +1,42 @@
+.modal {
+  position: fixed;
+  z-index: 500;
+  background-color: white;
+  width: 70%;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px black;
+  padding: 16px;
+  left: 15%;
+  top: 30%;
+  box-sizing: border-box;
+  transition: all 0.3s ease-out;
+}
+
+@media (min-width: 600px) {
+  .modal {
+    width: 500px;
+    left: calc(50% - 250px);
+  }
+}
+
+.modal button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  outline: none;
+  cursor: pointer;
+  font: inherit;
+  padding: 10px;
+  margin: 10px;
+  font-weight: bold;
+}
+
+.modal button:first-of-type {
+  margin-left: 0;
+  padding-left: 0;
+  color: #944317;
+}
+
+.modal button:nth-of-type(2) {
+  color: #5c9210;
+}
