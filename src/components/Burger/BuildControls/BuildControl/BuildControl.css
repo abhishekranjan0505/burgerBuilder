@@ -1,0 +1,49 @@
+.control-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 400px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 20px;
+}
+
+.control-menu p {
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 80px;
+  margin: 0;
+}
+
+.control-menu button {
+  padding: 8px 25px;
+  background-color: rgb(192, 92, 11);
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.control-menu button:disabled {
+  background-color: white;
+}
+
+@media only screen and (max-width: 500px) {
+  .control-menu {
+    width: 90%;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+  }
+
+  .control-menu p {
+    font-weight: normal;
+    width: 60px;
+  }
+
+  .control-menu button {
+    padding: 6px 15px;
+  }
+}
