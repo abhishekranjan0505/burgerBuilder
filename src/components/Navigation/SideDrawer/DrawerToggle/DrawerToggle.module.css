@@ -1,0 +1,19 @@
+.Hambergur {
+  margin-left: 16px;
+}
+
+.Hambergur div {
+  height: 3px;
+  width: 40px;
+  background-color: white;
+}
+
+.Hambergur div:nth-of-type(2) {
+  margin: 8px 0;
+}
+
+@media only screen and (min-width: 500px) {
+  .Hambergur {
+    display: none;
+  }
+}

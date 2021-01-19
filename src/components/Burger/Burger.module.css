@@ -1,0 +1,20 @@
+.Burger {
+  height: 400px;
+  width: 400px;
+  margin: auto;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  overflow: scroll;
+}
+
+.Burger::-webkit-scrollbar {
+  background: transparent;
+}
+
+@media only screen and (max-width: 500px) {
+  .Burger {
+    width: 80%;
+    height: 280px;
+  }
+}
